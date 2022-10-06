@@ -1,6 +1,6 @@
 :root {
-    --color-link: #2B59C3;
-    --color-highlight: #527cdd;
+    --color-link: #3b6ee5;
+    --color-highlight: #618bec;
     --color-light: #d9d9d9;
     --color-dark: #272d2d;
     --width-outer: 1200px;
@@ -32,52 +32,88 @@ b b, b strong, strong strong, strong b, .black {
     font-weight: 800;
 }
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
+.wrapper {
+    max-width: 1440px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-.hero .wrapper {
+.hero {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: minmax(1px, auto);
+    grid-template-rows: 0fr auto;
+}
+
+.hero header .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.hero header .content h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.1em;
+}
+
+.hero header .content nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.hero header .content nav a {
+    display: block;
+    color: var(--color-light);
+}
+
+.hero header .content nav a svg {
+    display: inline-block;
+    text-align: center;
+    min-width: 1.15em;
+    line-height: 1em;
+    margin-right: 0.2em;
+    color: var(--color-link);
+}
+
+.hero header .content nav a:hover svg {
+    color: var(--color-highlight);
+}
+
+.hero main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero main .content {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
-.hero h1 {
+.hero main .content h1 {
     flex: 1;
-
-    font-weight: 400;
+    order: 2;
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: 200;
 }
 
-.hero p {
+.hero main .content p {
     flex: 1;
-
-    font-weight: 100;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    order: 1;
+    font-size: 2rem;
+    line-height: 1.5em;
+    font-weight: 600;
     max-width: 42rem;
-}
-
-.hero nav {
-    flex: 1;
-
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    column-gap: 2rem;
-}
-
-.hero nav a {
-    color: var(--color-light);
-}
-
-.hero nav svg {
-    color: var(--color-link);
-    display: inline-block;
-    min-width: 1rem;
-    margin-right: 0.25rem;
+    text-align: center;
 }
