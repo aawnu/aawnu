@@ -1,4 +1,4 @@
-document.querySelector(".hero main").onmousemove = e => {
+document.onmousemove = e => {
     for (const card of document.querySelectorAll(".hero main .blob")) {
         const rect = card.getBoundingClientRect()
         const x = e.clientX - rect.left
