@@ -3,6 +3,7 @@
     --color-highlight: #618bec;
     --color-light: #d9d9d9;
     --color-dark: #272d2d;
+    --color-dark-line: #373d3d;
     --width-outer: 1200px;
 }
 
@@ -24,11 +25,17 @@ a:hover {
     color: var(--color-highlight);
 }
 
-b, strong, .bold {
+b,
+strong,
+.bold {
     font-weight: 600;
 }
 
-b b, b strong, strong strong, strong b, .black {
+b b,
+b strong,
+strong strong,
+strong b,
+.black {
     font-weight: 800;
 }
 
@@ -91,29 +98,61 @@ b b, b strong, strong strong, strong b, .black {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
-.hero main .content {
+.hero main .blob {
+    border-radius: 2rem;
+    position: relative;
+    z-index: 0;
+}
+
+.hero main .blob::Before {
+    z-index: 2;
+    background: radial-gradient(1200px circle at var(--mouse-x) var(--mouse-y),
+            var(--color-dark-line),
+            transparent 10%);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.hero main .blob>.flash {
+    z-index: -1;
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            var(--color-dark-line),
+            transparent 30%);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.hero main .blob:hover::before,
+.hero main:hover .blob>.flash {
+    opacity: 1;
+}
+
+.hero main .blob .content {
+    background-color: var(--color-dark);
+    width: 20vw;
+    margin: 0.25rem;
+    border-radius: 1.8rem;
+    aspect-ratio: 1 / 1;
     display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-.hero main .content h1 {
-    flex: 1;
-    order: 2;
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: center;
-    font-weight: 200;
-}
-
-.hero main .content p {
-    flex: 1;
-    order: 1;
-    font-size: 2rem;
-    line-height: 1.5em;
-    font-weight: 600;
-    max-width: 42rem;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
