@@ -112,7 +112,7 @@ strong b,
     z-index: 2;
     background: radial-gradient(1200px circle at var(--mouse-x) var(--mouse-y),
             var(--color-dark-line),
-            transparent 10%);
+            transparent 20%);
     border-radius: inherit;
     content: "";
     height: 100%;
