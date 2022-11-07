@@ -2,7 +2,6 @@
 <h3 align="center">PHP Developer</h3>
 
 - 💼 Work: [Subit ApS](https://subit.dk)
-- 🔭 Hobby: [Chttrlink](https://chttr.link)
-- 🌱 Learning: [Laravel](https://github.com/laravel/laravel)
-- 🤝 Project: [PHP GA4 Wrapper](https://github.com/AlexWestergaard/php-ga4)
+- 🤝 Connect: [LinkedIn](https://www.linkedin.com/in/alexwestergaard/)
+- 🖥️ Website: [aaw.nu](https://aaw.nu)
 - 📫 Contact: **aaw@aaw.nu**
