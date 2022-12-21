@@ -39,56 +39,76 @@ strong b,
     font-weight: 800;
 }
 
-section.hero {
-    min-height: 100vh;
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
-section.hero section.content {
+.hero .wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.hero .wrapper aside.selfie {
+    grid-column: 1 / 2;
+}
+
+.hero .wrapper aside.selfie img {
+    display: block;
+    max-height: 60vh;
+}
+
+.hero .wrapper .content {
+    grid-column: 2 / 3;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    display: grid;
+    grid-template-columns: minmax(1px, 1fr);
+    grid-template-rows: 0fr auto 0fr;
+}
+
+.hero .wrapper .content header {
     padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
 }
 
-section.hero section.content header hgroup {
-    text-align: center;
-}
-
-section.hero section.content header hgroup h1 {
-    font-size: 4rem;
-    line-height: 1em;
-    font-weight: 900;
-}
-
-section.hero section.content header hgroup h2 {
-    font-size: 1rem;
+.hero .wrapper .content header h1 {
+    font-size: 2rem;
     line-height: 1em;
     font-weight: 200;
 }
 
-section.hero section.content main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-    row-gap: 1rem;
+.hero .wrapper .content header h1 span.abbr-letter {
+    min-width: 1.2em;
+    text-align: center;
+    display: inline-block;
+    font-weight: 900;
 }
 
-section.hero section.content nav {
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 1rem;
+.hero .wrapper .content main {
+    padding: 1rem 2rem;
 }
 
-section.hero section.content nav a {
-    padding: 0.5rem 1rem;
-    border-radius: 0.35rem;
-    background-color: var(--color-link);
-    color: var(--color-light);
+.hero .wrapper .content main ul {
+    line-height: 1.5em;
+}
+.hero .wrapper .content main ul li svg {
+    margin-right: 0.25em;
+}
+
+.hero .wrapper .content footer .legal {
+    padding: 2rem;
+    line-height: 1em;
+    font-weight: 200;
+}
+
+svg {
+    display: inline-block;
+    height: 1em;
+    width: 1.2em;
+    text-align: center;
+    vertical-align: text-bottom;
+    line-height: 1em;
 }
