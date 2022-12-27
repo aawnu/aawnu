@@ -110,6 +110,29 @@ strong b,
     font-weight: 200;
 }
 
+@media screen and (max-width: 960px) {
+    .hero .wrapper {
+        display: grid;
+        grid-template-columns: minmax(1px, 1fr);
+        width: 100%;
+    }
+    .hero .wrapper aside.selfie {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .hero .wrapper aside.selfie img {
+        display: block;
+        max-height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+    .hero .wrapper .content {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
 svg {
     display: inline-block;
     height: 1em;
