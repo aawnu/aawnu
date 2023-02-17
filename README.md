@@ -3,11 +3,9 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/alexwestergaard/">
     🤝 Connect LinkedIn
-  </a>
-  <a href="https://www.linkedin.com/in/alexwestergaard/](https://aaw.nu)">
+  </a> | <a href="https://aaw.nu">
     🖥️ Website AAWnu
-  </a>
-  <a href="mailto:aaw@aaw.nu">
+  </a> | <a href="mailto:aaw@aaw.nu">
     📫 Contact
   </a>
 </p>
