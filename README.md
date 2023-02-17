@@ -4,7 +4,7 @@
   <a href="https://www.linkedin.com/in/alexwestergaard/">
     🤝 Connect LinkedIn
   </a>
-  <a href="[https://www.linkedin.com/in/alexwestergaard/](https://aaw.nu)">
+  <a href="https://www.linkedin.com/in/alexwestergaard/](https://aaw.nu)">
     🖥️ Website AAWnu
   </a>
   <a href="mailto:aaw@aaw.nu">
