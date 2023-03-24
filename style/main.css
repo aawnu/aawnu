@@ -43,6 +43,10 @@ strong b,
     font-weight: 800;
 }
 
+i {
+    font-style: italic;
+}
+
 .hero {
     display: flex;
     justify-content: center;
