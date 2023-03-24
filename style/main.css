@@ -4,13 +4,18 @@
     --color-dark: #292F36;
     --color-dark-line: #373d3d;
     --width-outer: 1200px;
+
+
+    --font-body: 'Inter', sans-serif;
+    --finansteori-font-head: "Playfair Display";
+    --finansteori-font-body: "Maven Pro";
 }
 
 html {
     background-color: var(--color-dark);
     color: var(--color-light);
     line-height: 18px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     font-weight: 400;
     font-size: 17px;
 }
@@ -43,6 +48,10 @@ strong b,
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
+    background: radial-gradient(ellipse at top, #373d3d, transparent),
+        radial-gradient(ellipse at bottom, #292F36, transparent),
+        radial-gradient(ellipse at bottom right, #aaaaaa35, transparent);
 }
 
 .hero .wrapper {
@@ -164,6 +173,48 @@ strong b,
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
+}
+
+
+.project.finansteori {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    row-gap: 1rem;
+
+    background-color: #004FFF;
+    background: radial-gradient(ellipse at center, #004FFF, #083492);
+}
+
+.project.finansteori h1 {
+    font-family: var(--finansteori-font-head);
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 52px;
+}
+
+.project.finansteori h2 {
+    font-family: var(--finansteori-font-body);
+    font-weight: 600;
+    max-width: 42em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.project.finansteori p {
+    max-width: 42em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.project.finansteori p a {
+    font-family: var(--finansteori-font-head);
+    font-weight: 800;
+    color: #fff;
+    border-bottom: 4px solid #083492;
 }
 
 svg {

@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://gwfh.mranftl.com/fonts/maven-pro?subsets=latin,latin-ext
+HostUrl=https://gwfh.mranftl.com/api/fonts/maven-pro?download=zip&subsets=latin-ext,latin&variants=600,800,regular
