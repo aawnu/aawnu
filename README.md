@@ -10,5 +10,5 @@
   </a>
 </p>
 <p align="center">
-  PHP (Laravel, Prestashop) | SQL (MariaDB) | HTML/CSS | JS/TS/Vue3 | NodeJS | Linux
+  PHP (Laravel) | SQL (MariaDB) | HTML/CSS | JS/TS/Vue3/React[-native] | NodeJS | Linux/Ubuntu
 </p>
