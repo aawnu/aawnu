@@ -47,28 +47,28 @@ i {
     font-style: italic;
 }
 
-.section-header {
+section.header {
     padding: 2rem;
     font-size: 1.25rem;
     line-height: 1em;
 }
 
-.section-header .wrapper {
+section.header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: .5rem;
 }
 
-.section-header header {
+section.header header {
     font-weight: 900;
 }
 
-.section-header header a {
+section.header header a {
     color: var(--color-light);
 }
 
-.section-header nav {
+section.header nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -76,33 +76,83 @@ i {
     row-gap: .5rem;
 }
 
-.section-header nav a {
+section.header nav a {
     display: block;
 }
 
-.section-header nav a:not(:hover) svg {
+section.header nav a:not(:hover) svg {
     fill: var(--color-light);
 }
 
-.section-content {
-    min-height: 65vh;
+section.headline .gridlayer {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+section.headline .gridlayer .label {
+    padding: 2rem;
+
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
+    text-shadow: 1px 1px 0px var(--color-dark-line);
+    font-size: 4rem;
     font-weight: 900;
-    font-size: 2rem;
-    line-height: 1.15em;
+    line-height: 1.2em;
 }
 
-.section-footer {}
+section.headline .gridlayer .image {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
 
-.section-footer .socials {
+    width: 100%;
+    max-height: 75vh;
+
+    justify-self: center;
+    object-position: top center;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+    section.headline .gridlayer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    section.headline .gridlayer .label {
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 1.2em;
+        align-self: flex-end;
+    }
+
+    section.headline .gridlayer .image {
+        max-height: 70vh;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+}
+
+section.footer {
+    padding-top: 2rem;
+}
+
+section.footer .socials {
     padding: 1rem 2rem;
     font-size: 1.66rem;
     line-height: 1em;
 }
 
-.section-footer .socials .wrapper {
+section.footer .socials .wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -111,15 +161,15 @@ i {
     row-gap: .5rem;
 }
 
-.section-footer .socials a {
+section.footer .socials a {
     display: block;
 }
 
-.section-footer .socials a:not(:hover) svg {
+section.footer .socials a:not(:hover) svg {
     fill: var(--color-light);
 }
 
-.section-footer footer {
+section.footer footer {
     padding: 1rem 2rem;
     text-align: center;
     font-weight: 200;
@@ -134,16 +184,16 @@ i {
     gap: 1rem;
 }
 
-.section-footer footer span.tag {
+section.footer footer span.tag {
     display: block;
     padding: .2rem .5rem;
 }
 
-.section-footer footer span.tag svg {
+section.footer footer span.tag svg {
     fill: #fff;
 }
 
-.section-footer footer span.tag.socials {
+section.footer footer span.tag.socials {
     display: flex;
     flex-direction: row;
     column-gap: .5rem;
