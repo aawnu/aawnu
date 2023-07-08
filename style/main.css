@@ -84,62 +84,79 @@ section.header nav a:not(:hover) svg {
     fill: var(--color-light);
 }
 
+section.headline {
+    padding: 2rem;
+}
+
 section.headline .gridlayer {
-    min-height: 50vh;
+    min-height: 65vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
 }
 
 section.headline .gridlayer .label {
-    padding: 2rem;
-
     grid-row: 1 / 2;
     grid-column: 1 / 2;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+section.headline .gridlayer .label h1 {
     text-align: center;
     text-shadow: 1px 1px 0px var(--color-dark-line);
     font-size: 4rem;
     font-weight: 900;
-    line-height: 1.2em;
+    line-height: 1.25em;
 }
 
 section.headline .gridlayer .image {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
 
-    width: 100%;
-    max-height: 75vh;
-
-    justify-self: center;
-    object-position: top center;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 960px) {
+section.headline .gridlayer .image img {
+    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
     section.headline .gridlayer {
-        display: grid;
+        min-height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
     }
 
     section.headline .gridlayer .label {
-        font-size: 2.5rem;
-        font-weight: 900;
-        line-height: 1.2em;
-        align-self: flex-end;
-    }
-
-    section.headline .gridlayer .image {
-        max-height: 70vh;
         grid-row: 1 / 2;
         grid-column: 1 / 2;
     }
 
+    section.headline .gridlayer .image {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    section.headline .gridlayer .image img {
+        max-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    section.headline .gridlayer .label h1 {
+        font-size: 2.5rem;
+        line-height: 1.25em;
+    }
 }
 
 section.footer {
