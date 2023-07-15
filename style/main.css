@@ -68,6 +68,16 @@ section.header header a {
     color: var(--color-light);
 }
 
+section.header header a img {
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: -0.1em;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 1em;
+}
+
 section.header nav {
     display: flex;
     flex-wrap: wrap;
@@ -88,72 +98,22 @@ section.headline {
     padding: 2rem;
 }
 
-section.headline .gridlayer {
-    min-height: 65vh;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 1rem;
-    row-gap: 2rem;
-}
-
-section.headline .gridlayer .label {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-
+section.headline .content {
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.headline .gridlayer .label h1 {
-    text-align: center;
+section.headline .content h1 {
     text-shadow: 1px 1px 0px var(--color-dark-line);
     font-size: 4rem;
     font-weight: 900;
     line-height: 1.25em;
 }
 
-section.headline .gridlayer .image {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section.headline .gridlayer .image img {
-    display: block;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-@media screen and (max-width: 1280px) {
-    section.headline .gridlayer {
-        min-height: auto;
-        grid-template-columns: 1fr;
-    }
-
-    section.headline .gridlayer .label {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-    }
-
-    section.headline .gridlayer .image {
-        grid-row: 2 / 3;
-        grid-column: 1 / 2;
-    }
-
-    section.headline .gridlayer .image img {
-        max-height: 40vh;
-    }
-}
-
 @media screen and (max-width: 660px) {
-    section.headline .gridlayer .label h1 {
+    section.headline .content h1 {
         font-size: 2.5rem;
         line-height: 1.25em;
     }

@@ -18,16 +18,21 @@
         <meta property="og:profile:first_name" content="Alex">
         <meta property="og:profile:last_name" content="Ahlgreen Westergaard">
         <meta property="og:profile:gender" content="male">
-        <link rel="stylesheet" href="font/fonts.css">
-        <link rel="stylesheet" href="style/reset.css">
-        <link rel="stylesheet" href="style/main.css">
+        <link rel="preload" href="/font/fonts.css" as="style" />
+        <link rel="stylesheet" href="/font/fonts.css">
+        <link rel="stylesheet" href="/style/reset.css">
+        <link rel="stylesheet" href="/style/main.css">
     </head>
 
     <body>
         <section class="header">
             <div class="wrapper">
                 <header>
-                    <a href="/">AAW</a>
+                    <a href="/">
+                        <img srcset="/img/alex-ahlgreen-westergaard-bw-suit-sq-l.jpg 960w, /img/alex-ahlgreen-westergaard-bw-suit-sq-l.jpg 480w"
+                            sizes="(max-width: 600px) 480px, 960px" src="/img/alex-ahlgreen-westergaard-bw-suit-sq-l.jpg" alt="Alex Westergaard" />
+                        AAW
+                    </a>
                 </header>
                 <nav>
                     <a href="https://instagram.com/aawnu" target="_blank" rel="noopener noreferrer">
@@ -65,14 +70,8 @@
         </section>
 
         <section class="headline">
-            <div class="wrapper gridlayer">
-                <div class="image">
-                    <img srcset="/img/alex-ahlgreen-westergaard-bw-suit-sq-l.jpg 960w, /img/alex-ahlgreen-westergaard-bw-suit-sq-l.jpg 480w"
-                        sizes="(max-width: 600px) 480px, 960px" src="/img/alex-ahlgreen-westergaard-bw-suit-sq-l.jpg" alt="Alex Westergaard" />
-                </div>
-                <div class="label">
-                    <h1>LIVE YOUR LIFE<br>PURPOSEFULLY,<br>WITH INTENT</h1>
-                </div>
+            <div class="wrapper content">
+                <h1>LIVE YOUR LIFE<br>INTENTIONALLY,<br>WITH PURPOSE</h1>
             </div>
         </section>
 
@@ -106,12 +105,21 @@
                 </div>
             </aside>
             <footer>
-                <span class="tag">
+                <span class="tag country">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                         <path
                             d="M266.3 48.3L232.5 73.6c-5.4 4-8.5 10.4-8.5 17.1v9.1c0 6.8 5.5 12.3 12.3 12.3c2.4 0 4.8-.7 6.8-2.1l41.8-27.9c2-1.3 4.4-2.1 6.8-2.1h1c6.2 0 11.3 5.1 11.3 11.3c0 3-1.2 5.9-3.3 8l-19.9 19.9c-5.8 5.8-12.9 10.2-20.7 12.8l-26.5 8.8c-5.8 1.9-9.6 7.3-9.6 13.4c0 3.7-1.5 7.3-4.1 10l-17.9 17.9c-6.4 6.4-9.9 15-9.9 24v4.3c0 16.4 13.6 29.7 29.9 29.7c11 0 21.2-6.2 26.1-16l4-8.1c2.4-4.8 7.4-7.9 12.8-7.9c4.5 0 8.7 2.1 11.4 5.7l16.3 21.7c2.1 2.9 5.5 4.5 9.1 4.5c8.4 0 13.9-8.9 10.1-16.4l-1.1-2.3c-3.5-7 0-15.5 7.5-18l21.2-7.1c7.6-2.5 12.7-9.6 12.7-17.6c0-10.3 8.3-18.6 18.6-18.6H400c8.8 0 16 7.2 16 16s-7.2 16-16 16H379.3c-7.2 0-14.2 2.9-19.3 8l-4.7 4.7c-2.1 2.1-3.3 5-3.3 8c0 6.2 5.1 11.3 11.3 11.3h11.3c6 0 11.8 2.4 16 6.6l6.5 6.5c1.8 1.8 2.8 4.3 2.8 6.8s-1 5-2.8 6.8l-7.5 7.5C386 262 384 266.9 384 272s2 10 5.7 13.7L408 304c10.2 10.2 24.1 16 38.6 16H454c6.5-20.2 10-41.7 10-64c0-111.4-87.6-202.4-197.7-207.7zm172 307.9c-3.7-2.6-8.2-4.1-13-4.1c-6 0-11.8-2.4-16-6.6L396 332c-7.7-7.7-18-12-28.9-12c-9.7 0-19.2-3.5-26.6-9.8L314 287.4c-11.6-9.9-26.4-15.4-41.7-15.4H251.4c-12.6 0-25 3.7-35.5 10.7L188.5 301c-17.8 11.9-28.5 31.9-28.5 53.3v3.2c0 17 6.7 33.3 18.7 45.3l16 16c8.5 8.5 20 13.3 32 13.3H248c13.3 0 24 10.7 24 24c0 2.5 .4 5 1.1 7.3c71.3-5.8 132.5-47.6 165.2-107.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM187.3 100.7c-6.2-6.2-16.4-6.2-22.6 0l-32 32c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l32-32c6.2-6.2 6.2-16.4 0-22.6z" />
                     </svg>
                     Denmark
+                </span>
+                <span class="tag corporation">
+                    <!-- <a href="http://proxyseed.com" target="_blank" rel="noopener noreferrer"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                        <path
+                            d="M64 48c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16h80V400c0-26.5 21.5-48 48-48s48 21.5 48 48v64h80c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64zM0 64C0 28.7 28.7 0 64 0H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm88 40c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V104zM232 88h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V104c0-8.8 7.2-16 16-16zM88 232c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V232zm144-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V232c0-8.8 7.2-16 16-16z" />
+                    </svg>
+                    ProxySeed
+                    <!-- </a> -->
                 </span>
                 <span class="tag contact">
                     <a href="mailto:aaw@aaw.nu" rel="noreferrer">
@@ -122,7 +130,7 @@
                         aaw@aaw.nu
                     </a>
                 </span>
-                <span class="tag">
+                <span class="tag copyright">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                         <path
                             d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z" />
