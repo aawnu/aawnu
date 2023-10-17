@@ -10,5 +10,6 @@
   </a>
 </p>
 <p align="center">
-  PHP (Laravel) | SQL (MariaDB) | HTML/CSS | JS/TS/Vue3/React[-native] | NodeJS | Linux/Ubuntu
+  PHP (Laravel) | SQL (MariaDB) | HTML/CSS<br>
+  JS/TS/Vue3/React[-native] | NodeJS | Linux/Ubuntu | GOlang
 </p>
