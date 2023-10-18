@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm Alex Ahlgreen Westergaard</h1>
-<h3 align="center">PHP Developer</h3>
 <p align="center">
   <a href="https://www.linkedin.com/in/alexwestergaard/">
     🤝 Connect LinkedIn
