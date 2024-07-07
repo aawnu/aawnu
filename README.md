@@ -9,6 +9,6 @@
   </a>
 </p>
 <p align="center">
-  PHP (Laravel) | JS/TS (Vue3/React[-native]/Svelte) | GOlang<br>
-  Linux/Ubuntu | NodeJS | SQL (MariaDB)
+  PHP (Laravel) | JS/TS (Vue3, React[-native], Svelte[-kit]) | GOlang<br>
+  Linux, Ubuntu | NodeJS | SQL (MariaDB)
 </p>
