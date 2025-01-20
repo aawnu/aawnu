@@ -5,7 +5,7 @@ Hello there, I'm a web & software developer with a curious mind. I love explorin
 - Connect on Linkedin: https://linkedin.com/in/alexwestergaard/
 
 ## Experience
-- PHP *| Laravel*
+- PHP *| Laravel, WordPress*
 - JS/TS *| Vue3, NextJS/React, React Native, Svelte, Sveltekit*
 - GO/GOlang
-- SQL *| MariaDB*
+- SQL *| MariaDB, SQLite*
