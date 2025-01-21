@@ -9,3 +9,4 @@ Hello there, I'm a web & software developer with a curious mind. I love explorin
 - JS/TS *| Vue3, NextJS/React, React Native, Svelte, Sveltekit*
 - GO/GOlang
 - SQL *| MariaDB, SQLite*
+- Cloud *| AWS, Vercel, DigitalOcean, Cloudflare*
