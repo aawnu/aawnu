@@ -3,6 +3,7 @@ Hello there, I'm a web & software developer with a curious mind. I love explorin
 
 - Learn more about me here: https://aaw.nu
 - Connect on Linkedin: https://linkedin.com/in/alexwestergaard/
+- Hire me: https://northbased.net
 
 ## Experience
 - PHP *| Laravel, WordPress, Code Igniter<sup>2</sup>*
@@ -10,9 +11,6 @@ Hello there, I'm a web & software developer with a curious mind. I love explorin
 - GO/GOlang
 - SQL *| MariaDB, SQLite*
 - Cloud *| AWS<sup>1</sup>, Vercel, DigitalOcean, Cloudflare*
-
-### Learning
-- K8S / Kubernetes - Trying to figure out how to run it (using Digital Ocean)
 
 -----
 1: Utilizing databases and simple compute services.  
